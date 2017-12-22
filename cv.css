@@ -1,0 +1,25 @@
+body
+{
+  margin: 0;
+  padding: 0;
+}
+
+header
+{
+ background-color: #6BFFFE;
+}
+#nomformation
+{
+  align-items: flex-end;
+}
+
+#menu
+{
+border: 2px solid black;
+}
+
+#menu ul
+{
+ list-style-type:none;
+ flex-direction: column;
+}
