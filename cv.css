@@ -1,12 +1,13 @@
 body
 {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
 }
 
 header
 {
-color: #d9fff8;
+  color: #d9fff8;
 }
 #nomformation
 {
@@ -15,17 +16,17 @@ color: #d9fff8;
 
 #menu
 {
-border: 2px solid black;
+  border: 2px solid black;
 
 }
 
 #menu ul
 {
- list-style-type:none;
- flex-direction: row;
- display: flex;
- justify-content: flex-end;
- align-items: flex-end;
+  list-style-type:none;
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 
 }
 li {
@@ -43,24 +44,48 @@ li a {
 .liun:hover {
   color: red;
 }
+.container {
+display: flex;
+height: 20vh;
+justify-content: space-around;
+}
+.comp {
+  font-size: 15px;
+  width: 335px;
+}
+.con {
+  font-size: 15px;
+  width: 263px;
+}
+.principal {
+  height: 80vh;
+
+}
+footer {
+  height: 20vh;
+}
 
 body  {
-height: 100%;
-position: relative;
-background-image:url(/home/blank-user05/_blank/ecv/image/font.jpeg);
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-animation: appear ease-in-out 3s;
+  height: 80vh;
+  position: relative;
+  background-image:url(/home/blank-user05/_blank/ecv/image/font.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: appear ease-in-out 3s;
 }
 @keyframes appear {
   from {
-  left: -100%
-}
-to {
-  left: 0%;
-}
+    left: -100%
+  }
+  to {
+    left: 0%;
+  }
 }
 p {
   color: #73a6ad;
+  margin-left: 6px;
+}
+.foot {
+  color: white;
 }
