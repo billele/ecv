@@ -6,7 +6,7 @@ body
 
 header
 {
- background-color: #6BFFFE;
+color: #d9fff8;
 }
 #nomformation
 {
@@ -16,10 +16,57 @@ header
 #menu
 {
 border: 2px solid black;
+
 }
 
 #menu ul
 {
  list-style-type:none;
- flex-direction: column;
+ flex-direction: row;
+ display: flex;
+ justify-content: flex-end;
+ align-items: flex-end;
+
+}
+li {
+  display: flex;
+  align-items: flex-end;
+  margin-right: auto;
+}
+li a {
+  color: white;
+}
+#menu li:hover {
+  font-size: 19px;
+}
+
+ #lideux {
+  color:green;
+}
+.liun{
+  color: red;
+}
+.litrois{
+  /*font-size: 19px;*/
+  color: green;
+}
+body  {
+height: 100%;
+position: relative;
+background-image:url(/home/blank-user05/_blank/ecv/image/font.jpeg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+animation: appear ease-in-out 3s;
+}
+@keyframes appear {
+  from {
+  left: -100%
+}
+to {
+  left: 0%;
+}
+}
+p {
+  color: #73a6ad;
 }
