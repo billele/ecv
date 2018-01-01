@@ -40,16 +40,10 @@ li a {
   font-size: 19px;
 }
 
- #lideux {
-  color:green;
-}
-.liun{
+.liun:hover {
   color: red;
 }
-.litrois{
-  /*font-size: 19px;*/
-  color: green;
-}
+
 body  {
 height: 100%;
 position: relative;
