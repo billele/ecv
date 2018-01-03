@@ -33,19 +33,19 @@ header
   color: #73a6ad;
 }
 .rondun {
-display: flex;
+  display: flex;
 
 }
 .rondeux {
-display: flex;
+  display: flex;
 
 }
 .rondtrois {
-display: flex;
+  display: flex;
 
 }
 .rondquatre {
-display: flex;
+  display: flex;
 
 }
 span {
@@ -158,4 +158,30 @@ p {
 }
 .foot {
   color: white;
+}
+@media screen and (min-width:300px) and (max-width:900px) {
+  p
+  {
+    display: block;
+    overflow: auto;
+    text-align: justify;
+    font-size: 0.7em;
+
+  }
+  body {
+    background-size: auto;
+  }
+  #menu {
+    font-size: 11px;
+  }
+  #menu > ul {
+    padding-left: 10px;
+  }
+  .comp {
+    width: 310px;
+  }
+  .con {
+    margin-right: auto;
+  }
+
 }
