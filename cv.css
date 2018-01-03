@@ -19,6 +19,74 @@ header
   border: 2px solid black;
 
 }
+.total {
+  display: flex;
+}
+.toto {
+  display:none;
+}
+.toto > p {
+  color: #73a6ad;
+}
+.rondun {
+display: flex;
+
+}
+.rondeux {
+display: flex;
+
+}
+.rondtrois {
+display: flex;
+
+}
+.rondquatre {
+display: flex;
+
+}
+span {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  float: left;
+  background: white;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+.rondun span:nth-child(-n+2){
+  background: #9084e3;
+}
+.rondeux span:nth-child(-n+2){
+  background: #9084e3;
+}
+.rondtrois span:nth-child(-n+1){
+  background: #9084e3;
+}
+.rondquatre span:nth-child(-n+1){
+  background: #9084e3;
+}
+.quit
+{
+  width: 98%;
+  display: flex;
+  flex-direction: row-reverse;
+  color: red;
+  font-size: 25px;
+}
+.toto:target {
+  display: block;
+  height: 300px;
+  width: 100%;
+  overflow: auto;
+  color: #73a6ad;
+
+}
+.toto:target ~ #always {
+  display: none;
+}
+.toto ~ #always {
+  display: block;
+}
 
 #menu ul
 {
@@ -45,16 +113,16 @@ li a {
   color: red;
 }
 .container {
-display: flex;
-height: 20vh;
-justify-content: space-around;
+  display: flex;
+  height: 20vh;
+  justify-content: space-around;
 }
 .comp {
-  font-size: 15px;
+  font-size: 14px;
   width: 335px;
 }
 .con {
-  font-size: 15px;
+  font-size: 14px;
   width: 263px;
 }
 .principal {
@@ -66,7 +134,6 @@ footer {
 }
 
 body  {
-  height: 80vh;
   position: relative;
   background-image:url(/home/blank-user05/_blank/ecv/image/font.jpeg);
   background-size: cover;
