@@ -159,6 +159,11 @@ p {
 .foot {
   color: white;
 }
+iframe {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 @media screen and (min-width:300px) and (max-width:900px) {
   p
   {
@@ -182,6 +187,10 @@ p {
   }
   .con {
     margin-right: auto;
+  }
+  iframe {
+    width: auto;
+    height: 255px;
   }
 
 }
