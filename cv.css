@@ -147,7 +147,7 @@ footer {
 
 body  { /* animation de l ecriture au chargement de la page -   */
   position: relative;
-  background-image:url(/home/blank-user05/_blank/ecv/image/font.jpeg);
+  background-image:url(image/font.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
