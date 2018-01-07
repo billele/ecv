@@ -1,14 +1,14 @@
-body
+body /* reglage de la marget-du padding et de la police de la page   */
 {
   margin: 0px;
   padding: 0px;
   height: 100vh;
   font-family: titre;
 }
-.haut{
+.haut{/* mode flex pour placer la photo  */
   display: flex;
 }
-.hautdeux > img {
+.hautdeux > img { /* taille de ma photo */
   width: 140px;
   height: 120px;
   border-radius: 70px;
@@ -145,7 +145,7 @@ footer {
   height: 20vh;
 }
 
-body  {
+body  { /* animation de l ecriture au chargement de la page -   */
   position: relative;
   background-image:url(/home/blank-user05/_blank/ecv/image/font.jpeg);
   background-size: cover;
@@ -153,7 +153,7 @@ body  {
   background-position: center;
   animation: appear ease-in-out 3s;
 }
-@keyframes appear {
+@keyframes appear { /* regle de lanimation  */
   from {
     left: -100%
   }
@@ -161,14 +161,14 @@ body  {
     left: 0%;
   }
 }
-p {
+p { /* couleur de la police -   */
   color: #73a6ad;
   margin-left: 6px;
 }
 .foot {
   color: white;
 }
-iframe {
+iframe { /* mise en place du formulaire*/
   margin-left: auto;
   margin-right: auto;
   display: block;
