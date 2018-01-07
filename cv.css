@@ -5,6 +5,15 @@ body
   height: 100vh;
   font-family: titre;
 }
+.haut{
+  display: flex;
+}
+.hautdeux > img {
+  width: 140px;
+  height: 120px;
+  border-radius: 70px;
+  margin-left: 50px;
+}
 
 header
 {
@@ -191,6 +200,9 @@ iframe {
   iframe {
     width: auto;
     height: 255px;
+  }
+  .hautdeux > img {
+    margin-left: 0px;
   }
 
 }
