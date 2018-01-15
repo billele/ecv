@@ -7,134 +7,177 @@
   <link rel="stylesheet" type="text/css" href="print.css" media="print">
 </head>
 <body>
-  <div class="principal">
-
-    <header>
-      <div class="haut">
-        <div class="hautun">
+  <header>
+    <div class="haut">
+      <div class="hautun">
         <h1 id="nom">Zaroui Billele</h1>
         <h3 id="nomformation">Développeur web</h3>
       </div>
       <div class="hautdeux">
-        <img src="moi.jpeg" alt="ma photo">
+        <img id="maphoto" src="moi.jpeg" alt="ma photo">
       </div>
     </div>
-    <nav>
+    <nav id="menu_nav">
       <div id="menu">
-        <ul>
-          <li><a class="liun"href="#">Home</a></li>
-          <li><a class="liun"href="#compétance">Compétences</a></li>
+        <input type="checkbox" name="test" id="menu_mobile" checked/>
+        <label for="menu_mobile" id="labelTest"><i class="fa fa-bars" aria-hidden="true" id="hamburgerMenu"></i></label>
+        <!-----HAMBURGER MOBILE----->
+        <a href="#" id="aTest">
+        </a>
+        <!-----LISTE MENU NAV----->
+        <ul id="listeMobile">
+          <li><a class="liun"href="#always">Home</a></li>
+          <li><a class="liun"href="#competence">Compétences</a></li>
           <li><a class="liun"href="#formation">Formations</a></li>
           <li><a class="liun"href="#experience">Expériences</a></li>
           <li><a class="liun"href="#loisir">Loisirs</a></li>
         </ul>
       </div>
-    </header>
-    <main>
-      <section class="toto" id="compétance" class="comp">
-        <h1>Mes compétances</h1>
-        <div class="total">
-          <div class="liste">
-            <ul>
-              <div class="rondun">
-                <div>
-                  <li>HTML5</li>
-                </div>
-                <div class="rond">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
+    </nav>
+  </header>
+  <main>
+    <section class="toto" id="competence" class="comp">
+      <h1>Mes compétences</h1>
+      <div class="total">
+        <div class="liste">
+          <ul>
+            <div class="rondun">
+              <div>
+                <li>HTML5</li>
               </div>
-              <div class="rondeux">
-                <div>
-                  <li>CSS</li>
-                </div>
-                <div class="rond">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
+              <div class="rond">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
               </div>
-              <div class="rondtrois">
-                <div>
-                  <li>BOOTSTRAP</li>
-                </div>
-                <div class="rond">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-              </div>
-              <div class="rondquatre">
-                <div>
-                  <li>SQL</li>
-                </div>
-                <div class="rond">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-              </div>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="toto" id="formation">
-        <h1>Mes formations</h1>
-        <ul>
-          <li><p><FONT color="red">2007-2009</font>- Bts Informatique de Gestion-Icoges</br>Administrateur Réseaux</p></li>
-            <li><p><FONT color="red">2006-2007</font>- Dut Informatique de Gestion-Université de Jussieux</br>Math Informatique</p></li>
-              <li><p><FONT color="red">2004-2006</font>- Bac science Industriel-Lycée Dorion</p></li>
-              </ul>
-
-            </section>
-            <section class="toto" id="experience">
-              <h1>Mes expériences</h1>
-              <ul>
-                <li><p><FONT color="red">2016</font>- Fondation Louis Vuitton- Neuilly sur Seine-7mois</br>- Controle et sécurité</p></li>
-                  <li><p><FONT color="red">2016</font>- STS- Paris- <b>stagiaire</b>- 7semaines</br>- Controle et sécurité</br>- Déploiement de Logiciel à distance</br>- Maintenance logiciel</p>
-                    <li><p><FONT color="red">2016</font>- Aramis SI- St Pierre du Perray-<b> Administrateur Réseaux</b>-6semaines</br>- Déploiement d'un Réseaux</br>- Maintenance logiciel</br>- Création de compte utilisateur sur windows serveur 2003</p></li>
-                    </ul>
-
-                  </section>
-                  <section class="toto" id="loisir">
-                    <h1>Mes loisirs</h1>
-                    <ul>
-                      <li>Sport</li>
-                      <li>Jeux-Video</li>
-                      <li>Informatique</li>
-                      <li>Cinéma</li>
-                      <li>Music</li>
-                    </ul>
-                  </section>
-                  <section class="toto" id="contacte">
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdZWjTcaalrgVKGhqylYwO2B8XplM7DTRZAwEZWgbzF2iP9Lw/viewform?embedded=true" width="855" height="497" frameborder="0" marginheight="0" marginwidth="0">Chargement en cours...</iframe>
-                  </section>
-                  <section id="always" >
-                    <p class="text">bienvenue sur mon site de recherche d'emploie pour un métier de développeur web.Ce site a pour but de vous exposer mon savoir faire pour suciter votre interer. Je vous présenterai mon parcours ainsi que mes compétences. Par la même occassion, je vous indiquerai le poste que je recherche. </p>
-                    <p class="text">je m'appel Zaroui Billele,j'ai 30ans résidant sur Paris, actuellement en formation de développeur web, je souhaite retrouver un poste correspondant a la fin de ma formation. Mes atouts sont une bonne capacité de diagnostic et d'adaptation, une facilité à travailler en groupe, ainsi qu'une grande pour l'informatique et la technologie.</p>
-                  </section>
-                </main>
-              </nav>
             </div>
-            <footer>
-              <div class="container">
-                <div class="comp">
-                  <h3 class="foot"><i>Compétences</i></h3>
-                  <p class="text">Je vous présenterai mon parcours ainsi que mes compétences. Par la même occassion, je vous indiquerai le poste que je recherche .</p>
-                  <a href="#compétance">en savoir plus</a>
-                </div>
-                <div class="con">
-                  <h3 class="foot"><i>Contact</i></h3>
-                  <p class="text">Si vous souhaitez plus de renseignement sur mon profile ou me faire une proposition de poste... </p>
-                  <h4><i><a href="#contacte">c'est ici</a></i></h4>
-                </div>
+            <div class="rondeux">
+              <div>
+                <li>CSS</li>
               </div>
-            </footer>
-          </body>
-          </html>
+              <div class="rond">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="rondtrois">
+              <div>
+                <li>BOOTSTRAP</li>
+              </div>
+              <div class="rond">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="rondquatre">
+              <div>
+                <li>SQL</li>
+              </div>
+              <div class="rond">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="rondquatre">
+              <div>
+                <li>JS</li>
+              </div>
+              <div class="rond">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="toto" id="formation">
+      <h1>Mes formations</h1>
+      <ul>
+        <li>
+          <p>
+            <FONT color="red">2007-2009</font>
+              - Bts Informatique de Gestion-Icoges
+            </br>Administrateur Réseaux
+          </p>
+        </li>
+        <li>
+          <p>
+            <FONT color="red">2006-2007</font>
+              - Dut Informatique de Gestion-Université de Jussieu
+            </br>
+            Math Informatique
+          </p>
+        </li>
+        <li>
+          <p>
+            <FONT color="red">2004-2006</font>
+              - Bac science Industriel-Lycée Dorion
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="toto" id="experience">
+        <h1>Mes expériences</h1>
+        <ul>
+          <li><p><FONT color="red">2016</font>- Fondation Louis Vuitton- Neuilly sur Seine-7mois</br>- Controle et sécurité</p>
+          </li>
+          <li><p><FONT color="red">2016</font>- STS- Paris- <b>stagiaire</b>- 7semaines</br>- Controle et sécurité</br>- Déploiement de Logiciel à distance</br>- Maintenance logiciel</p>
+          </li>
+          <li><p><FONT color="red">2016</font>- Aramis SI- St Pierre du Perray-<b> Administrateur Réseaux</b>-6semaines</br>- Déploiement d'un Réseaux</br>- Maintenance logiciel</br>- Création de compte utilisateur sur windows serveur 2003</p>
+          </li>
+        </ul>
+      </section>
+      <section class="toto" id="loisir">
+        <h1>Mes loisirs</h1>
+        <img src="image/cinema.jpeg" alt="cinema">
+        <img src="image/sport.png" alt="sport"width="260" height="164">
+        <img src="image/jeux.jpeg" alt="jeux"width="260" height="164">
+        <img src="image/informatique.png" alt="informatique"width="260" height="164">
+        <img src="image/music.jpeg" alt="music"width="260" height="164">
+      </section>
+      <section class="toto" id="contacte">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdZWjTcaalrgVKGhqylYwO2B8XplM7DTRZAwEZWgbzF2iP9Lw/viewform?embedded=true" width="855" height="497" frameborder="0" marginheight="0" marginwidth="0">Chargement en cours...</iframe>
+      </section>
+      <section id="always">
+        <p class="text">bienvenue sur mon site de recherche d'emploi pour un métier de développeur web.Ce site a pour but de vous exposer mon savoir faire pour susciter votre interêt. Je vous présenterai mon parcours ainsi que mes compétences. Par la même occasion, je vous indiquerai le poste que je recherche. </p>
+        <p class="text">je m'appel Zaroui Billele,j'ai 30ans résidant sur Paris, actuellement en formation de développeur web, je souhaite retrouver un poste correspondant a la fin de ma formation. Mes atouts sont une bonne capacité de diagnostic et d'adaptation, une facilité à travailler en groupe, ainsi qu'une grande pour l'informatique et la technologie.</p>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="comp">
+          <h3 class="foot"><i>Compétences</i></h3>
+          <p class="text">Je vous présenterai mon parcours ainsi que mes compétences. Par la même occassion, je vous indiquerai le poste que je recherche .</p>
+          <a href="#competance">en savoir plus</a>
+        </div>
+        <div class="con">
+          <h3 class="foot"><i>Contact</i></h3>
+          <p class="text">Si vous souhaitez plus de renseignement sur mon profil ou me faire une proposition de poste... </p>
+          <h4><i><a href="#contacte">c'est ici</a></i></h4>
+        </div>
+      </div>
+      <div class="leslogo">
+        <ul class="linksList__content foldable__content" id="linkicone">
+          <li><a href="https://www.facebook.com/billel.zaroui?hc_ref=ARS-AmPthT1fbIdw099zTCrV3n7uhMfafKmVRpjXLbeosjY5RO9J0YK_MwWwYVWWKJs&fref=nf" title="Facebook" target="_blank" class="roundIcon roundIcon--facebook footer__socialButtons"><span class="hidden"><img src="facebook.png" widh="30px"height="30px"</img></span><i class="icon-facebook roundIcon__icon"></i></a>
+          </li>
+          <li><a href="https://twitter.com/Zaroui16?s=03" title="twitter" target="_blank" class="roundIcon roundIcon--twitter footer__socialButtons"><span class="hidden"><img src="twitter.png" widh="30px"height="30px"</img></span><i class="icon-facebook roundIcon__icon"></i></a>
+          </li>
+          <li><a href="tel:+33123456789" class="btn btnVert"><span><img src="phone.png" widh="30px"height="30px"</img</span></a>
+          </li>
+          <li><a href="billele.zaroui@gtmail.com"><span><img src="mail.jpeg" widh="30px"height="30px"</img</span> </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+  </html>

@@ -2,19 +2,55 @@ body /* reglage de la marget-du padding et de la police de la page   */
 {
   margin: 0px;
   padding: 0px;
-  height: 100vh;
   font-family: titre;
+  height: 100%;
+}
+.leslogo > ul {
+  display: flex;
+}
+p {
+  font-size: larger;
+}
+main {
+  height: 442px;
+}
+.leslogo {
+  visibility: hidden;
+}
+#menu_mobile {
+  display: block;
+  visibility: hidden;
+}
+#listeMobile {
+  margin-top: -12px;
+}
+#always {
+  width: 330px;;
+  margin-left: auto;
+  margin-right: auto;
+}
+#contacte
+   {
+      border: 0px;
+   }
+.hautun {
+text-shadow: 1px 1px;
 }
 .haut{/* mode flex pour placer la photo  */
   display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+.hautdeux {
+  overflow: hidden;
+  border-radius: 100%;
+  margin: 0px 25px;
+  height: 150px;
+  width: 150px;
 }
 .hautdeux > img { /* taille de ma photo */
-  width: 140px;
-  height: 120px;
-  border-radius: 70px;
-  margin-left: 50px;
+  width: 100%;
 }
-
 header
 {
   color: #d9fff8;
@@ -27,7 +63,7 @@ header
 #menu
 {
   border: 2px solid black;
-
+height: 48px;
 }
 #experience {
   overflow: auto;
@@ -96,9 +132,7 @@ span {
 .toto:target ~ #always {
   display: none;
 }
-.toto ~ #always {
-  display: block;
-}
+
 
 #menu ul
 {
@@ -137,12 +171,8 @@ li a {
   font-size: 14px;
   width: 263px;
 }
-.principal {
-  height: 80vh;
-
-}
 footer {
-  height: 20vh;
+  margin-top: -34px;
 }
 
 body  { /* animation de l ecriture au chargement de la page -   */
@@ -184,14 +214,21 @@ iframe { /* mise en place du formulaire*/
   }
   body {
     background-size: auto;
+    height: 100%;
   }
   #menu {
     font-size: 11px;
+    margin-top: -14px;
+    border: none;
+    height: auto;
   }
   #menu > ul {
     padding-left: 10px;
   }
-  .comp {
+  #menu > ul > li {
+    margin-left: 62px;
+  }
+    .comp {
     width: 310px;
   }
   .con {
@@ -204,5 +241,109 @@ iframe { /* mise en place du formulaire*/
   .hautdeux > img {
     margin-left: 0px;
   }
+  #experience >ul > li{
+    margin-top: -22px;
+  }
+  #experience > h1 {
+    margin-top: -4px;
+  }
+  #formation > h1 {
+    margin-top: -4px;
+  }
+  #formation >ul > li{
+    margin-top: -20px;
+  }
+  #competance > h1 {
+    margin-top: -4px;
+  }
+  #competance >ul > li{
+    margin-top: -20px;
+  }
+  #loisir > h1 {
+    margin-top: -4px;
+  }
+  #loisir >ul > li::first-line {
+    margin-top: -20px;
+  }
+  #loisir > img {
+    height: 60px;
+    width: 60px;
+  }
+  footer {
+    margin-top: auto;
+  }
+  .container {
+    visibility: hidden;
+  }
+  #menu_nav i {
+    position: absolute;
+    width: 24px;
+    height: 4px;
+    background: blueviolet;
+    border: 11px green solid;
+   }
 
+
+   #menu_nav ul {
+       flex-direction: column;
+       text-align: center;
+       background-color: rgba(247, 247, 247, 0.6);
+   }
+
+
+   #menu_nav ul li:hover ul {
+       display: block;
+       background-color: rgba(247, 247, 247, 0.6);
+       text-align: center;
+
+   }
+   #menu_nav i::before, #menu_nav i::after {
+    content: "";
+    display: block;
+  }
+  #menu_nav i, #menu_nav i::before, #menu_nav i::after {
+    position: absolute;
+    width: 24px;
+    height: 4px;
+    background: blueviolet;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  #menu_nav i::before {
+    margin-top: -8px;
+  }
+  #menu_nav i::after {
+    margin-top: 8px;
+  }
+  #menu_mobile {
+    position: absolute;
+    width: 24px;
+    height: 4px;
+    background: blueviolet;
+  }
+   #menu_mobile:checked ~ #listeMobile {
+       display: none;
+   }
+  #menu_mobile {
+    display: block;
+    visibility: hidden;
+  }
+  #menu_nav i:hover {
+    cursor: pointer;
+  }
+  main {
+    height: 217px;
+    margin-top: 27px;
+  }
+  .leslogo {
+    visibility: visible;
+  }
+  .leslogo > ul {
+    display: flex;
+  }
+#linkicone {
+  margin-top: -50px;
+}
 }
